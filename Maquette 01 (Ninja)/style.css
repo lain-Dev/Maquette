@@ -1,0 +1,569 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    
+    background: url(image/BGMontagnes.png) no-repeat;
+    background-color: black;
+    font-family: "Shojumaru-Regular", Helvetica, Arial, sans-serif;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-image: url(image/ensembleFond.png);
+    background-repeat: no-repeat;
+    width: 1689px;
+    height: 2600px;
+    margin-top: 10%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#menu {
+    background-image: url(image/menuTop/CadreMenu.png);
+    height: 123px;
+    width: 844px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+ul {
+    list-style-type:none;
+} 
+
+li {
+    float:left; /*pour IE*/
+    margin-top: 13px;
+}
+   
+#globale {
+    background-image: url(image/menuTop/btnVueGlobale.png);
+    height: 96px;
+    width: 101px;
+    margin-left: 17px;
+}
+
+#globale:hover {
+    background-image: url(image/menuTop/btnVueGlobale\ MO.png);
+}
+ 
+#ville {
+    background-image: url(image/menuTop/btnCentreVille.png);
+    height: 96px;
+    width: 101px;
+}
+
+#ville:hover {
+    background-image: url(image/menuTop/btnCentreVille\ MO.png);
+}
+
+#carte {
+    background-image: url(image/menuTop/btnCarte.png);
+    height: 96px;
+    width: 101px;
+}
+
+#carte:hover {
+    background-image: url(image/menuTop/btnCarte\ MO.png);
+}
+
+#classement {
+    background-image: url(image/menuTop/btnClassement.png);
+    height: 96px;
+    width: 101px;
+}
+
+#classement:hover {
+    background-image: url(image/menuTop/btnClassement\ MO.png);
+}
+
+#aide {
+    background-image: url(image/menuTop/btnAide.png);
+    height: 96px;
+    width: 101px;
+}
+
+#aide:hover {
+    background-image: url(image/menuTop/btnAide\ MO.png);
+}
+
+#amelio {
+    background-image: url(image/menuTop/btnAmelio.png);
+    height: 96px;
+    width: 101px;
+}
+
+#amelio:hover {
+    background-image: url(image/menuTop/btnAmelio\ MO.png);
+}
+
+#boutique {
+    background-image: url(image/menuTop/btnBoutique.png);
+    height: 96px;
+    width: 101px;
+}
+
+#boutique:hover {
+    background-image: url(image/menuTop/btnBoutique\ MO.png);
+}
+
+#bonus {
+    background-image: url(image/menuTop/btnBonus.png);
+    height: 96px;
+    width: 101px;
+}
+
+#bonus:hover {
+    background-image: url(image/menuTop/btnBonus\ MO.png);
+}
+
+#profil {
+    background-image: url(image/CadreProfil/CadreProfil.png);
+    background-repeat: no-repeat;
+    width: 335px;
+    height: 140px;
+    margin-top: 30px;
+}
+
+#profil {
+    color: white;
+}
+
+#profil h2 {
+    text-align: center;
+    margin-top: 4px;
+}
+
+#profil-details {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#infos {
+    word-spacing: 10px;
+}
+
+#avatar {
+    height: 85px;
+    width: 130px;
+    background-image: url(image/avatar2.jpg);
+    background-repeat: no-repeat;
+}
+
+#ressource {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  font-family: "Verdana";
+  color: rgb(14, 7, 0);
+  font-weight: bold;
+}
+
+#fond-ressource {
+    background-image: url(image/ressources/fond.png);
+    width: 1169px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mais {
+    background-image: url(image/ressources/pictoRessNour.png);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    margin-right: 70px;
+    height: 40px;
+}
+
+.fer {
+    background-image: url(image/ressources/pictoRessMetal.png);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    margin-right: 70px;
+    height: 40px;
+}
+
+.bois {
+    background-image: url(image/ressources/pictoRessBois.png);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    margin-right: 70px;
+    height: 40px;
+}
+
+.roche {
+    background-image: url(image/ressources/pictoRessRoche.png);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    margin-right: 70px;
+    height: 40px;
+}
+
+#fond-infos {
+    background-image: url(image/info/fondInfo.png);
+    width: 541px;
+    height: 60px;
+    font-size: 16px;
+    font-family: "Verdana";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fond-infos > p {
+margin-top: 25px;
+margin-right: 50px;
+}
+
+#jeux {
+    display: flex;
+    flex-direction: row;
+    width: 1689px;
+    align-items: center;
+    justify-content: center;
+}
+
+#jeux h1 {
+    font-size: 26px;
+  font-family: "Verdana";
+  color: rgb(32, 26, 22);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 9px;
+  
+}
+
+#jeux-gauche {
+    display: flex;
+    flex-direction: column;
+    width: 724px;
+}
+
+#jeux-droite {
+    display: flex;
+    flex-direction: column;
+    width: 478px;
+    margin-bottom: 400px;
+    margin-left: 15px;
+}
+
+#vue {
+    background-image: url(image/Fenetre/vue\ globale.png);
+    width: 724px;
+    height: 901px;
+    margin-bottom: 20px;
+}
+
+#vue > img {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+#chantier {
+    width: 150px;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+#chantier-infos {
+    display: flex;
+    margin-top: 20px;
+}
+
+#chantier-infos > div, #puisance-infos > div {
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#chantier-infos > div > h4, p {
+    margin-bottom: 20px;
+}
+
+#puissance {
+    background-image: url(image/Fenetre/puissance.png);
+    width: 729px;
+    height: 229px;
+    margin-bottom: 20px;
+}
+
+#puisance-infos {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+#puisance-infos > div > h4 {
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#puisance-infos > div > h5, p {
+    margin-bottom: 30px;
+}
+
+#chat {
+    background-image: url(image/Fenetre/tchat.png);
+    width: 729px;
+    height: 479px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#chat > h1 {
+    margin-bottom: 5px;
+}
+
+#chatHaut {
+    display: flex;
+    height: 370px;
+}
+
+#chatBas {
+    height: 70px;
+    display: flex;
+}
+
+#texteEnter {
+    width: 580px;
+}
+
+#btnEnter {
+    background-image: url(image/Fenetre/ElemChat/btnSendMail.png);
+    width: 97px;
+}
+
+#btnEnter:hover {
+    background-image: url(image/Fenetre/ElemChat/btnSendMailMO.png);
+}
+
+#chatInfos {
+    display: flex;
+    width: 230px;
+    flex-direction: row;
+}
+
+#speudo {
+    margin-left: 20px;
+    display: flex;
+    margin-top: 250px;
+}
+
+#speudo > div > img {
+    margin-bottom: 5px;
+}
+
+#idForum {
+    margin-left: 10px;
+}
+
+#idForum > p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#cursor {
+    background-image: url(image/Fenetre/curseurAss.png);
+    background-repeat: no-repeat;
+    height: 362px;
+    width: 53px;
+    margin-left: 52px;
+    margin-top: 20px;
+
+}
+
+#chatrWrite > p {
+    margin-bottom: 10px;
+    margin-left: 18px;
+    margin-right: 160px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#chatrWrite > p:nth-child(1) {
+    margin-top: 230px;
+}
+
+#texteEnter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#txtG {
+    background-image: url(image/Fenetre/ElemChat/champTxtG.png);
+    height: 47px;
+    background-repeat: no-repeat;
+    width: 25px;
+    margin-left: 55px;
+}
+
+#txtC {
+    background-image: url(image/Fenetre/ElemChat/champTxt.png);
+    height: 47px;
+    width: 500px;
+}
+
+#txtD {
+    background-image: url(image/Fenetre/ElemChat/champTxtD.png);
+    height: 47px;
+    background-repeat: no-repeat;
+    width: 25px;
+}
+
+#bureau {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    width: 482px;
+    height: 31x;
+    margin-bottom: 20px;
+}
+
+#clan {
+    background-image: url(image/Fenetre/clan.png);
+    background-repeat: no-repeat;
+    width: 482px;
+    height: 195px;
+    margin-bottom: 50px;
+}
+
+#production {
+    background-image: url(image/Fenetre/Production.png);
+    background-repeat: no-repeat;
+    width: 482px;
+    height: 352px;
+    margin-bottom: 50px;
+}
+
+#allies {
+    background-image: url(image/Fenetre/ALLIES.png);
+    background-repeat: no-repeat;
+    width: 482px;
+    height: 352px;
+    margin-top: 0px;
+}
+
+#clan {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: "Verdana";
+    color: rgb(32, 26, 22);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+#infos-clan {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#infos-clan > div:nth-child(1) {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#barre-clan {
+    height: 60px;
+    width: 372px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+#barre-clan > img:nth-child(1) {
+    position: absolute;
+}
+
+#barre-clan > img:nth-child(2) {
+    position: relative;
+    height: 31px;
+    margin-top: 11px;
+}
+
+#production > div:nth-child(2) {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#production > div:nth-child(2) > div {
+    display: flex;
+    height: 30px;
+}
+
+#production > div:nth-child(2) > div > p {
+    word-spacing: 20px;
+}
+
+#production > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#production > div:nth-child(3) > p:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+/* ALLIES*/
+
+#allies > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#speudo-allie {
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 200px;
+}
+
+#cursor-allie {
+    background-image: url(image/Fenetre/curseurAss.png);
+    background-repeat: no-repeat;
+    height: 362px;
+    width: 53px;
+    margin-left: 115px;
+    margin-top: 20px;
+}
+
+
+#speudo-allie > div:nth-child(1) {
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+#speudo-allie > div:nth-child(1) > img {
+    margin-bottom: 8px;
+}
