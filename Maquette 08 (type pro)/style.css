@@ -21,7 +21,7 @@
 
 /*Code Antoine*/
 section.header {
-    height: 600px;
+    height: 520px;
     background: linear-gradient(transparent,rgba(0, 0, 0, 1)), url('img/seaside-371229_1920.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -67,28 +67,20 @@ section.presentation {
 
 @media screen and (max-width: 540px) {
     section.header {
-        height: 540px;
+        height: 480px;
     }
-    
     .jumbotron {
         width: 85%;
     }
-
     .card-box {
         margin-top: 0;
         padding-left: 0;
         padding-right: 0;
     }
-
     h1.display-4 {
         font-size: 2.5rem;
     }
-
     p.lead {
         font-size: medium;
-    }
-
-    .presentation-text {
-        margin-left: 0;
     }
 }
