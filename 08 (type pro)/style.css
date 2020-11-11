@@ -1,0 +1,94 @@
+/* Code Olivier*/
+#illustration {
+    background: url(img/presentation.svg) no-repeat center; 
+    background-size: cover;
+    height: 400px;
+    width: 400px
+
+}
+
+/*Code Léo*/
+.logos
+{
+    max-width: 15%;
+    max-height: 15%;   
+}
+
+.map
+{
+    overflow: hidden;
+}
+
+/*Code Antoine*/
+section.header {
+    height: 600px;
+    background: linear-gradient(transparent,rgba(0, 0, 0, 1)), url('img/seaside-371229_1920.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.jumbotron {
+    width: 50%;
+}
+
+.card-box {
+    margin-top: -7rem;
+}
+
+section.presentation {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1)), url('img/city-925223_1920.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 770px) {
+    section.header {
+        background-size: auto;
+        background-position: right;
+    }
+
+    .jumbotron {
+        width: 75%;
+    }
+
+    .card-box {
+        margin-top: -5rem;
+    }
+    
+    section.presentation {
+        background-size: auto;
+        background-position: right;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    section.header {
+        height: 540px;
+    }
+    
+    .jumbotron {
+        width: 85%;
+    }
+
+    .card-box {
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+    p.lead {
+        font-size: medium;
+    }
+
+    .presentation-text {
+        margin-left: 0;
+    }
+}
