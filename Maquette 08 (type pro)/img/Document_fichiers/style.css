@@ -17,10 +17,6 @@
 }
 
 /*Code Léo*/
-body
-{
-    font-family: 'Roboto', sans-serif;
-}
 .logos
 {
     max-width: 50%;
@@ -91,10 +87,6 @@ section.footer {
         background-size: auto;
         background-position: top;
     }
-
-    .card-service {
-        height: 210px;
-    }
 }
 
 @media screen and (max-width: 540px) {
@@ -131,9 +123,5 @@ section.footer {
 
     .presentation-text {
         margin-left: 0;
-    }
-
-    .card-service {
-        height: 370px;
     }
 }
