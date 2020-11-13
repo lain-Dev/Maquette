@@ -1,67 +1,16 @@
-/* Code Olivier*/
-#illustration {
-    background: url(img/presentation.svg) no-repeat center; 
-    background-size: cover;
-    height: 400px;
-    width: 400px
+*{
+    box-sizing: border-box;
 }
 
-.avatar {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.card-service {
-    height: 200px;
-}
+/* code Olivier */
 
-/*Code Léo*/
-body
-{
-    font-family: 'Roboto', sans-serif;
-}
-.logos
-{
-    max-width: 50%;
-    max-height: 50%; 
-}
-
-.blocLogos 
-{
-    max-width: 80%;
-}
-
-.map
-{
-    overflow: hidden;
-}
-
-/*Code Antoine*/
-section.header {
-    height: 600px;
-    background: linear-gradient(transparent,rgba(0, 0, 0, 1)), url('img/seaside-371229_1920.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.jumbotron {
-    width: 50%;
-}
-
-.card-box {
-    margin-top: -7rem;
-}
-
-.card:hover {
-    transform: scale(1.1);
-    transition: .3s ease-in-out;
-    z-index: 1;
-}
-
-section.presentation {
+#presentation {
     background: linear-gradient(transparent, rgba(0, 0, 0, 1)), url('img/city-925223_1920.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -69,71 +18,210 @@ section.presentation {
     background-repeat: no-repeat;
 }
 
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ul-service {
+    list-style-type: square;
+}
+
+
+/* code Leo */
+
+.logos
+{
+    width: 65px;
+    height: 65px;
+}
+
+.bordureBouton
+{
+    width: 200px;
+    height: 55px;
+    background-color: orange;
+}
+
+
+/* code Antoine */
+section.main {
+    height: 600px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1)), url('img/seaside-371229_1920.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+
+.jumbo-box {
+    margin-top: -7.5rem;
+}
+
+.card-box {
+    margin-top: -9rem;
+}
+
+.card {
+    border: none !important;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+}
+
+div.card:nth-child(1) {
+    /* border-top-left-radius: .25rem !important; */
+    border-top-right-radius: 0 !important;
+}
+
+div.card:nth-child(2) {
+    border-radius: none !important;
+}
+
+div.card:nth-child(3) {
+    border-top-left-radius: 0 !important;
+}
+
+.author-box {
+    margin-right: 7rem;
+}
+
 section.footer {
-    background: linear-gradient(to right, #000000, #434343);
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 @media screen and (max-width: 1030px) {
-    section.header {
+    section.main, #presentation {
+        background-position: right;
         background-size: auto;
-        background-position: top;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    section.main {
+    height: 560px;
+    background-position: right;
+    background-size: auto;
     }
 
-    .jumbotron {
-        width: 75%;
+    .jumbo-box {
+        margin-top: -5.5rem;
     }
 
     .card-box {
         margin-top: -5rem;
     }
-    
-    section.presentation {
+
+    #presentation {
+        background-position: right;
         background-size: auto;
-        background-position: top;
     }
 
-    .card-service {
-        height: 210px;
+    iframe {
+        width: 224px;
+        height: 150px;
+    }
+
+    .logos {
+        width: 25px;
+        height: 25px;
+    }
+
+    #exampleInputEmail {
+        font-size: small;
+    }
+
+    /* .bordureBouton {
+        margin-top: 2em;
+        height: 80%;
+        width: 40%;
+    } */
+
+    /* div.bordureBouton:nth-child(1) > button:nth-child(1) {
+        font-size: 6px;
+    }
+
+    .texteCoordonnees {
+        font-size: 6px;
+    }
+
+    .newsletterText {
+        font-size: 6px;
+    } */
+}
+
+@media screen and (min-width: 750px) and (max-width: 770px) {
+    
+    body > section.container-fluid.bg-dark.text-white.align-items-center > div > div.col.d-flex.flex-column.newsletterText > div.pt-lg-5.d-flex.align-items-center.align-items-md-start.flex-column.mb-5.mb-md-0 > div {
+        margin-top: 2em;
+        height: 80%;
+        width: 40%;
+    }
+
+    div.bordureBouton:nth-child(1) > button:nth-child(1) {
+        font-size: 6px;
+    }
+
+    .texteCoordonnees {
+        font-size: 6px;
+    }
+
+    .newsletterText {
+        font-size: 6px;
     }
 }
 
-@media screen and (max-width: 540px) {
-    section.header {
-        height: 540px;
-        background-position: right;
-    }
-
-    .test {
-        color: white !important;
-    }
-    
-    .jumbotron {
-        width: 85%;
+@media screen and (max-width: 380px) {
+    .jumbo-box {
+        margin-top: -4rem;
     }
 
     .card-box {
         margin-top: 0;
-        padding-left: 0;
-        padding-right: 0;
     }
 
-    h1.display-4 {
-        font-size: 2.5rem;
+    .card-body {
+        text-align: center;
     }
 
-    p.lead {
-        font-size: medium;
+    .text-card {
+        font-size: 13px;
     }
 
-    section.presentation {
-        background-position: right;
+    .navbar {
+        background-color: rgba(107, 107, 112, 0.459) !important;
     }
 
-    .presentation-text {
-        margin-left: 0;
+    iframe {
+        padding-left: 2.5em;
+        padding-top: 2.5em;
+        width: 90%;
+        height: 300px;
     }
 
-    .card-service {
-        height: 370px;
+    .logos {
+        width: 50px;
+        height: 50px;
+    }
+
+    .reseauLogo {
+        justify-content: center;
+    }
+
+    .bordureBouton {
+        margin-top: 1em;
+        width: 40%;
+        height: 100%;
+    }
+    
+    div.bordureBouton:nth-child(1) > button:nth-child(1) {
+        font-size: small;
+        padding-bottom: 20px;
     }
 }
