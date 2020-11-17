@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*code olivier*/
+
+.btn-color {
+    background-color: #0E6248;
+    color: white;
+}
+
+/*Gallery masonry !!!*/
+.masonry {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+  
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+  
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+
+  .test {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  figure {
+      border: 3px solid grey;
+      border-radius: 5px;
+  }
+
+  .cell--1 {
+    grid-column: 1 / 6;
+    grid-row: 1 / 6;
+  }
+
+  .cell--2 {
+    grid-column: 6 / 9;
+    grid-row: 1 / 11;
+  }
+  
+  .cell--3 {
+    grid-column: 9 / 12;
+    grid-row: 1 / 4;
+  }
+  
+  .cell--4 {
+    grid-column: 12 / -1;
+    grid-row: 1 / 4;
+  }
+  
+  .cell--5 {
+    grid-column: 1 / 4;
+    grid-row: 6 / 11;
+  }
+  
+  .cell--6 {
+    grid-column: 4 / 6;
+    grid-row: 6 / 7;
+  }
+  
+  .cell--7 {
+    grid-column: 4 / 6;
+    grid-row: 7 / 11;
+  }
+  
+  .cell--8 {
+    grid-column: 1 / 6;
+    grid-row: 11 / -1;
+  }
+  
+  .cell--9 {
+    grid-column: 6 / 12;
+    grid-row: 11 / -1;
+  }
+  
+  .cell--10 {
+    grid-column: 9 / 12;
+    grid-row: 4 / 11;
+  }
+  
+  .cell--11 {
+    grid-column: 12 / 13;
+    grid-row: 4 / 6;
+  }
+  
+  .cell--12 {
+    grid-column: 13 / -1;
+    grid-row: 4 / 6;
+  }
+  
+  .cell--13 {
+    grid-column: 12 / -1;
+    grid-row: 6 / 13;
+  }
+  
+  .cell--14 {
+    grid-column: 12 / -1;
+    grid-row: 13 / -1;
+  }
+/*code Landry*/
+.fond-main{
+    background-size: cover;
+    height: 60vh;
+    background: black;
+    overflow: hidden;
+    background: #7a686e;  /* fallback colour. Make sure this is just one solid colour. */
+    background: linear-gradient(rgba(22, 22, 31, 0.8), rgba(168, 161, 164, 0.226)), url("images/presentation.jpeg"); /* The least supported option. */
+}
+
+.text-color{
+    color: white !important;
+    font-weight: bold;
+}
+
+.btn-color1 {
+  background-color: #d1cacb;
+  color: white;
+}
+
+.formul{
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 360px) and ( max-width: 768px){
+  .paragraph{
+    padding-right: 0em !important;
+    
+  }
+  .paragraph{
+    padding-left: 1em !important;
+    
+  }
+  .respon-donation{
+    margin-top: 0em !important;
+  }
+  .formul{
+    margin-top: 12rem !important;
+  }
+}
