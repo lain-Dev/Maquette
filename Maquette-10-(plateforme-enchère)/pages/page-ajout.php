@@ -1,6 +1,5 @@
 <?php
 session_start();
-include("module/session.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,19 +12,14 @@ include("module/session.php");
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>apply site enchere</title>
+    <title>page ajout produit</title>
 </head>
 
 <body>
 
-    <!--NavBar-->
-    <?php include("include/nav.php"); ?>
-    <!--fin Nav-->
+    <?php include("../include/nav.php"); ?>
 
-
-    <!--Afficher enchere-->
-    <?php include("include/card.php"); ?>
-
+    <?php include("../include/form.php"); ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
