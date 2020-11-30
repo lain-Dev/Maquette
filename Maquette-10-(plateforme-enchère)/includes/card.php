@@ -1,4 +1,4 @@
-
+  
 <div class="card m-5" style="width: 18rem;">
   <img src="<?php echo $_SESSION['image'] ?>" class="card-img-top" alt="...">
   <div class="card-body">
@@ -8,6 +8,7 @@
         prix: <?php echo $_SESSION['prixinit'] ?> <br>
         prix du clic: <?php echo $_SESSION['prixClic'] ?> <br>
     </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-large btn-danger">Enchérir</a>
   </div>
 </div>
+

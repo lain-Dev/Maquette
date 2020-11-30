@@ -25,9 +25,13 @@ include("modules/session.php");
     <?php include("includes/nav.php"); ?>
     <!--fin Nav-->
 
+    <!--container liste cards-->
+    <article class="container">
+        <!--Afficher enchere-->
+        <?php include("includes/card.php"); ?>
 
-    <!--Afficher enchere-->
-    <?php include("includes/card.php"); ?>
+    </article>
+    <!--fin article-->
 
 
     <!-- Optional JavaScript; choose one of the two! -->
