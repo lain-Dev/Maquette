@@ -16,7 +16,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="pages/page-ajout.php"">Ajouter un produit</a>
-                    <a class="dropdown-item" href="#">Voir produits désactiver</a>
+                    <a class="dropdown-item" href="../pages/page-produitOff.php">Voir produits désactiver</a>
                 </div>
             </li>
         </ul>
