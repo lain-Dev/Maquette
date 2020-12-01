@@ -3,7 +3,7 @@
 
 <section class="container mt-5">
 
-    <form action="" method="POST">
+    <form action="" method="POST" enctype="multipart/form-data">
     <!--à utiliser multipart/form-data lorsque votre formulaire comprend des <input type="file">éléments -->
         <div class="form-group row">
             <label for="nom_produit" class="col-md-3 col-form-label font-weight-bold">Nom du produit:</label>
