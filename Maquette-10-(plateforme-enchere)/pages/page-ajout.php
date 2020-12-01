@@ -1,7 +1,3 @@
-<?php
-session_start();
-include("modules/session.php");
-?>
 <!doctype html>
 <html lang="fr">
 
@@ -11,28 +7,19 @@ include("modules/session.php");
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--CSS-->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>apply site enchere</title>
+    <title>page ajout produit</title>
 </head>
 
 <body>
 
-    <!--NavBar-->
-    <?php include("includes/nav.php"); ?>
-    <!--fin Nav-->
+    <?php include("../includes/nav-home.php"); ?>
 
-    <!--container liste cards-->
-    <article class="container">
-        <!--Afficher enchere-->
-        <?php include("includes/card.php"); ?>
-
-    </article>
-    <!--fin article-->
-
+    <?php include("../includes/form.php"); ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

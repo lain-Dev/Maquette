@@ -10,19 +10,28 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--CSS-->
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>page ajout produit</title>
+    <title>apply site enchere</title>
 </head>
 
 <body>
 
-    <?php include("../includes/nav-home.php"); ?>
+    <!--NavBar-->
+    <?php include("includes/nav.php"); ?>
+    <!--fin Nav-->
 
-    <?php include("../includes/form.php"); ?>
+    <!--container liste cards-->
+    <article class="container">
+        <!--Afficher enchere-->
+        <?php include("includes/card.php"); ?>
+
+    </article>
+    <!--fin article-->
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
