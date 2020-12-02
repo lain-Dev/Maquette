@@ -15,14 +15,14 @@
         <div class="form-group row">
             <label for="description" class="col-md-3 col-form-label font-weight-bold">Description:</label>
             <div class="col-md-9">
-                <input type="text" class="form-control" name="description_produit" placeholder="Description du produit" pattern="[a-zA-Z0-9 é & è ç ! à ù , ; . £ * # ' ]+" value="description lol">
+                <input type="text" class="form-control" name="description_produit" placeholder="Description du produit" pattern="[a-zA-Z0-9 é & è ç ! à ù , ; . £ * # ' ]+" value="description lol" required>
             </div>
         </div>
 
         <div class="form-group row">
             <label for="image" class="col-md-3 col-form-label font-weight-bold">Image du produit</label>
             <div class="col-md-9">
-                <input type="file" class="form-control" name="image_produit">
+                <input type="file" class="form-control" name="image_upload" >
             </div>
         </div>
 
@@ -37,6 +37,13 @@
             <label for="prix_clic" class="col-md-3 col-form-label font-weight-bold">Prix du clic (en €)</label>
             <div class="col-md-9">
                 <input type="number" class="form-control" name="prix_clic_produit" placeholder="Exemple : 0.01 €" required min="0.01" value="1.01">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="prix_clic" class="col-md-3 col-form-label font-weight-bold">temps enchère (heures): </label>
+            <div class="col-md-9">
+                <input type="number" class="form-control" name="prix_clic_produit" placeholder="1 heure" required min="1" value="1">
             </div>
         </div>
 
