@@ -1,5 +1,5 @@
 
-<?php foreach($_SESSION['DUMMY_ARRAY'] as $key => $data) :?>  
+
 
 <div class="card m-5" style="width: 18rem;">
   <img src="<?php $data['image'] ?>" class="card-img-top" alt="...">

@@ -1,15 +1,8 @@
   <?php
     if (isset($_POST['submit'])) {
 
-        $data = [
-            'nom' => htmlspecialchars($_POST["nom_produit"]),
-            'description' => htmlspecialchars($_POST["description_produit"]),
-            'image' => $_POST["image_produit"],
-            'prixInitial' => $_POST["prix_initial_produit"],
-            'prixClic' => $_POST["prix_clic_produit"],
-            'prixAugmenter' => $_POST["augmentation_prix_produit"],
-            'dureeAugmenter' => $_POST["augmentation_duree_produit"]
-        ];
+        $idEnchere = md5(uniqid(rand(), true)); //On attribue un id unique à l'image via la fonction md5 uniqid et random
+        $_POST['id'] = $idEnchere;
 
         //on test si le fichier existe 
         $filename = '../json/data.json';
@@ -19,18 +12,10 @@
             $jsonString = file_get_contents($filename);
             //Transforme la structure json en array PHP
             $jsonArray = json_decode($jsonString, true);
-        }
-
-        //ajout des données postées au tableau
-        //on ajoute une nouvelle entrée dans le tableau
-        if ($jsonArray == NULL) {
-            file_put_contents($filename, json_encode($data));
-        } else {
-            array_push($jsonArray, $data);
-
-            //ecraser le fichier json avec la nouvelle structure à partir du tableau
+            //envoi les "POST" dans le tableau json qui est en php
+            array_unshift($jsonArray,$_POST);
+            //en rencode le fichier en json aprés avoir reçu données
             file_put_contents($filename, json_encode($jsonArray));
         }
     }
-
     ?>

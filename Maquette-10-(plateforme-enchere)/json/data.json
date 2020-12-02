@@ -1,54 +1,32 @@
-{
-    "nom": "iphone test",
-    "description": "description lol",
-    "image": null,
-    "prixInitial": "1",
-    "prixClic": "1.01",
-    "prixAugmenter": "1.01",
-    "dureeAugmenter": "30",
-    "0": {
-        "nom": "iphone test",
-        "description": "description lol",
-        "image": null,
-        "prixInitial": "1",
-        "prixClic": "1.01",
-        "prixAugmenter": "1.01",
-        "dureeAugmenter": "30"
+[
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": "12222",
+        "prix_clic_produit": "1.01",
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "submit": "Ajouter le produit",
+        "id": "15690852ba18bc16c693305febd7c690"
     },
-    "1": {
-        "nom": "iphone test",
-        "description": "description lol",
-        "image": null,
-        "prixInitial": "1",
-        "prixClic": "1.01",
-        "prixAugmenter": "1.01",
-        "dureeAugmenter": "30"
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": "1111",
+        "prix_clic_produit": "1.01",
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "submit": "Ajouter le produit",
+        "id": "1cd62af40d3806a70ff666193d0e52a9"
     },
-    "2": {
-        "nom": "iphone test",
-        "description": "description lol",
-        "image": null,
-        "prixInitial": "1",
-        "prixClic": "1.01",
-        "prixAugmenter": "1.01",
-        "dureeAugmenter": "30"
-    },
-    "3": {
-        "nom": "iphone test",
-        "description": "description lol",
-        "image": "wallhaven-g7z7ld.jpg",
-        "prixInitial": "1",
-        "prixClic": "1.01",
-        "prixAugmenter": "1.01",
-        "dureeAugmenter": "30"
-    },
-    "4": {
-        "nom": "iphone test",
-        "description": "description lol",
-        "image": "test.jpg",
-        "prixInitial": "1",
-        "prixClic": "1.01",
-        "prixAugmenter": "1.01",
-        "dureeAugmenter": "30"
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": "1",
+        "prix_clic_produit": "1.01",
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "submit": "Ajouter le produit",
+        "id": "522d9c930931cfa8d9df9afc8b19c008"
     }
-}
+]
