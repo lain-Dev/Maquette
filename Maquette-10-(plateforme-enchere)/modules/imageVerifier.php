@@ -11,7 +11,7 @@ if ($fileName == "") { // vérifie si la variable n'est pas vide
         <div class="alert alert-danger">Erreur survenue lors saisie image !</div></div>'; 
         die;//Si oui alors on arrete la fonction et on affiche qu'il y a eu une erreur lors du transfert   
     }
-
+    /*
     $maxSize = 10000000; //On spécifie ici la taille maximale de l'image
     $fileSize = $_FILES['image_upload']['size'];//On recupere via la $_FILES la taille de l'image ajoutée dans l'input
 
@@ -44,4 +44,5 @@ if ($fileName == "") { // vérifie si la variable n'est pas vide
     $resultat = move_uploaded_file($tmpName, $fileDir);//On utilise la fonction de la superglobale pour transferer le nom temporaire attribué vers le dossier indiqué
 
     //Si le fichier a bien été déplacé alors on ajoute toutes les données dans le tableau et on ajoute les dernieres données necessaires pour une enchere
+    */
 }

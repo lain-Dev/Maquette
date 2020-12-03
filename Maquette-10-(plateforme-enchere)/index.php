@@ -26,23 +26,25 @@ session_start();
 
     <!--container liste cards-->
     <article class="container">
-        <div class="row row-cols-lg-3 row-cols-1">
+
+        <div class="my-5 row row-cols-1 row-cols-md-3">
             <!--Afficher enchere-->
-            <?php 
+            <?php
 
             $datajson = file_get_contents("json/data.json");
             $data = json_decode($datajson, true);
 
-            if($data == null) { // si l'état est false donc inactif     
+            if ($data == null) { // si l'état est false donc inactif     
                 echo '<div class="col-12 d-flex justify-content-center mt-5">
                 <div class="alert alert-warning">PAS DE PRODUIT ACTUELLEMENT !</div>
                 </div>'; // afficher le message aucun article à afficher
             }
 
-            include("modules/card.php"); 
-            
+            include("modules/card.php");
+
             ?>
         </div>
+
 
     </article>
     <!--fin article-->

@@ -1,1 +1,74 @@
-[{"nom_produit":"iphone test","description_produit":"description lol","prix_initial_produit":"1","prix_clic_produit":"1","augmentation_prix_produit":"1.01","augmentation_duree_produit":"30","submit":"Ajouter le produit","id":"c7b5d33995e6e62aee803f542d4b91a4","image":"img\/test.jpg"},{"nom_produit":"iphone test","description_produit":"description lol","prix_initial_produit":"1","prix_clic_produit":"1","augmentation_prix_produit":"1.01","augmentation_duree_produit":"30","submit":"Ajouter le produit","id":"dba957b4cda0901e5788867616be30a5","image":"img\/test.jpg"},{"nom_produit":"iphone test","description_produit":"description lol","prix_initial_produit":"1","prix_clic_produit":"1","augmentation_prix_produit":"1.01","augmentation_duree_produit":"30","submit":"Ajouter le produit","id":"9465d9d71705b16b2badf134ba69611c","image":"img\/test.jpg"},{"nom_produit":"iphone test","description_produit":"description lol","prix_initial_produit":"1","prix_clic_produit":"1","augmentation_prix_produit":"1.01","augmentation_duree_produit":"30","submit":"Ajouter le produit","id":"386a0439ac8244afd061451b459b6dc8","image":"img\/wallhaven-g7z7ld.jpg"}]
+[
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": "1",
+        "prix_clic_produit": "1.01",
+        "temps_enchere": "1",
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "submit": "Ajouter le produit",
+        "id": "3df8daea955a1d459e1260c7171633ee",
+        "image": "img\/ps5.jpg"
+    },
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": "1",
+        "prix_clic_produit": "1.01",
+        "temps_enchere": "1",
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "submit": "Ajouter le produit",
+        "id": "b1e6e57476205dbbdae22fd8cae959fc",
+        "image": "img\/tele.jpg"
+    },
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": "1",
+        "prix_clic_produit": "1.01",
+        "temps_enchere": "1",
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "submit": "Ajouter le produit",
+        "id": "433f9082618b0ea10c7c1d8a9eb29c8d",
+        "image": "img\/test.jpg"
+    },
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": "1",
+        "prix_clic_produit": "1.01",
+        "temps_enchere": "1",
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "submit": "Ajouter le produit",
+        "id": "3df8daea955a1d459e1260c7171633ee",
+        "image": "img\/ps5.jpg"
+    },
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": "1",
+        "prix_clic_produit": "1.01",
+        "temps_enchere": "1",
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "submit": "Ajouter le produit",
+        "id": "b1e6e57476205dbbdae22fd8cae959fc",
+        "image": "img\/tele.jpg"
+    },
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": "1",
+        "prix_clic_produit": "1.01",
+        "temps_enchere": "1",
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "submit": "Ajouter le produit",
+        "id": "433f9082618b0ea10c7c1d8a9eb29c8d",
+        "image": "img\/test.jpg"
+    }
+]
