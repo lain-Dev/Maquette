@@ -35,18 +35,13 @@ foreach ($data as $valeur) {
           prix: <?php echo $valeur['prix_initial_produit'] ?> <br>
           temps l'enchère : <?= $valeur['temps_enchere'] ?>
         </p>
-        <!--
-        <div class="d-flex justify-content-center">
-          <button type="submit" formmethod="post" name="encherir" value="encherir" class="alert alert-primary">
-            enchérir
-          </button>
-        </div>
-        -->
 
-        <form action="post">
-        <div class="justify-content-end d-flex row">
-            <input class="btn btn-secondary mr-3 mb-5 mt-5 p-2 border-0" name="encherir" type="submit" value="encherir">
-        </div>
+        <form method="POST">
+          <div class="justify-content-end d-flex row">
+            <input name="id" value="<?= $valeur['id'] ?>" hidden>
+            <button id="" class="btn btn-secondary mr-3 p-2 border-0" name="encherir">
+              Encherir</button>
+          </div>
         </form>
 
       </div>
