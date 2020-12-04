@@ -1,6 +1,7 @@
 <?php
 
 include("enchere.php");
+include("timer.php");
 $datajson = file_get_contents("json/data.json");
 $data = json_decode($datajson, true);
 
@@ -39,7 +40,7 @@ foreach ($data as $valeur) {
         <form method="POST">
           <div class="justify-content-end d-flex row">
             <input name="id" value="<?= $valeur['id'] ?>" hidden>
-            <button id="" class="btn btn-secondary mr-3 p-2 border-0" name="encherir">
+            <button id="" class="btn btn-secondary btn-listenchere mr-3 p-2 border-0" name="encherir">
               Encherir</button>
           </div>
         </form>
