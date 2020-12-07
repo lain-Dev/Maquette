@@ -1,16 +1,21 @@
 <?php
-
+//recherche des cards actives pour index.php
+//importation module enchère
 include("enchere.php");
-include("timer.php");
+//importation module timer
+//include("timer.php");
+//variable dont destination fichier json
 $datajson = file_get_contents("json/data.json");
+//décodage du ficher en php
 $data = json_decode($datajson, true);
 
-
+//recherche dans les tableaux
 foreach ($data as $valeur) {
+  //condition recherche valeur active dans les tableaux
   if ($valeur['active-card'] == 'active') {
 
 ?>
-
+  <!--intégration html par php-->
   <div class="col mb-4">
     <div class="card border border-success">
 

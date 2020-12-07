@@ -1,9 +1,11 @@
 <?php
+//ouverture session php
 session_start();
 
 if (!(isset($_SESSION['nomBouton']))) {
-
+//lors la session attribut valeur au bouton login
 $_SESSION['nomBouton'] = 'login';
+//attribution les href au login
 $_SESSION['pageLogin'] = 'pages/page-login.html';
 }
 
@@ -42,7 +44,7 @@ $_SESSION['pageLogin'] = 'pages/page-login.html';
 
             $datajson = file_get_contents("json/data.json");
             $data = json_decode($datajson, true);
-
+            //si il y a aucune card on affiche un message a index
             if ($data == null) { // si l'état est false donc inactif     
                 echo '<div class="col-12 d-flex justify-content-center mt-5">
                 <div class="alert alert-warning">PAS DE PRODUIT ACTUELLEMENT !</div>

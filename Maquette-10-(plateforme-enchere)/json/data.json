@@ -1,1 +1,28 @@
-[{"nom_produit":"iphone test","description_produit":"description lol","prix_initial_produit":22.21,"prix_clic_produit":"1.01","temps_enchere":631,"augmentation_prix_produit":"1.01","augmentation_duree_produit":"30","active-card":"active","submit":"Ajouter le produit","id":"aacccc68272c384b316e1675d7267565","image":"img\/tele.jpg"},{"nom_produit":"iphone test","description_produit":"description lol","prix_initial_produit":"1","prix_clic_produit":"1.01","temps_enchere":"1","augmentation_prix_produit":"1.01","augmentation_duree_produit":"30","active-card":"desactive","submit":"Ajouter le produit","id":"c162261324dd02e085c39d9e97989c27","image":"img\/test.jpg"}]
+[
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": 22.21,
+        "prix_clic_produit": "1.01",
+        "temps_enchere": 631,
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "active-card": "active",
+        "submit": "Ajouter le produit",
+        "id": "aacccc68272c384b316e1675d7267565",
+        "image": "img\/tele.jpg"
+    },
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": "1",
+        "prix_clic_produit": "1.01",
+        "temps_enchere": "1",
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "active-card": "desactive",
+        "submit": "Ajouter le produit",
+        "id": "c162261324dd02e085c39d9e97989c27",
+        "image": "img\/test.jpg"
+    }
+]

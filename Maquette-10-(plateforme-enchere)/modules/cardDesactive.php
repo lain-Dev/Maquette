@@ -1,14 +1,18 @@
 <?php
-
+//recherche des cards désactiver pour afficher dans section section 
+//importation module pour activer card
 include("activer.php");
+//attribution destination fichier dans variable
 $datajson = file_get_contents("../json/data.json");
+//decode fichier json en php
 $data = json_decode($datajson, true);
 
 
-
+//recherche dans tableau
 foreach ($data as $valeur) {
+  //afficher les cards valeurs deactivées
   if ($valeur['active-card'] == 'desactive') {
-
+//importation html par php
 ?>
 
     <div class="col mb-4">

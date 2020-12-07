@@ -28,8 +28,9 @@ session_start();
         <div class="my-5 row row-cols-1 row-cols-md-3">
             <!--Afficher enchere-->
             <?php
-
+            //variable destination fichier
             $datajson = file_get_contents("../json/data.json");
+            //variable decode json en php
             $data = json_decode($datajson, true);
 
            /* if ($data == null) { // si l'état est false donc inactif     
@@ -37,7 +38,8 @@ session_start();
                 <div class="alert alert-warning">PAS DE PRODUIT DESACTIVE ACTUELLEMENT !</div>
                 </div>'; // afficher le message aucun article à afficher
             } */
-
+            
+            //importation module card qui sont désactivées
             include("../modules/cardDesactive.php");
 
             ?>

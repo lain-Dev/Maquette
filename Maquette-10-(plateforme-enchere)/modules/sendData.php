@@ -1,15 +1,18 @@
   <?php
+  //envoi données vers json
+    //condition clic input submit
     if (isset($_POST['submit'])) {
 
         
-
+        //générateur aléatoire id pour la card créer
         $idEnchere = md5(uniqid(rand(), true)); //On attribue un id unique à l'image via la fonction md5 uniqid et random
         $_POST['id'] = $idEnchere;
-
+        //importer module vérifeir img
         include('imageVerifier.php');
+        //chemin pour retourver img sélectionner dans les dossier img
         $_POST['image'] = "img/" . basename($_FILES["image_upload"]["name"]);
 
-        //on test si le fichier existe 
+        //attribution destination json dans variable
         $filename = '../json/data.json';
         if (isset($filename)) {
             //fichier existe alors on récupère son contenu on transforme en array
