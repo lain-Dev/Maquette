@@ -1,18 +1,16 @@
 <?php
 
-include("enchere.php");
-include("timer.php");
-$datajson = file_get_contents("json/data.json");
+$datajson = file_get_contents("../json/data.json");
 $data = json_decode($datajson, true);
 
 
 foreach ($data as $valeur) {
-  if ($valeur['active-card'] == 'active') {
+    if ($valeur['active-card'] == 'desactive') {
 
 ?>
 
   <div class="col mb-4">
-    <div class="card border border-success">
+    <div class="card border border-danger">
       <div class="card-header">
         <ul class="nav nav-pills card-header-pills">
           <li class="nav-item">
@@ -26,7 +24,7 @@ foreach ($data as $valeur) {
           </li>
         </ul>
       </div>
-      <img src="<?= $valeur['image'] ?>" class="card-img-top border-bottom" alt="..." style="width: 100%; height: 15vw; object-fit: cover;">
+      <img src="../<?= $valeur['image'] ?>" class="card-img-top border-bottom" alt="..." style="width: 100%; height: 15vw; object-fit: cover;">
 
       <div class="card-body">
 

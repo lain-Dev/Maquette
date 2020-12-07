@@ -4,7 +4,7 @@
 <section class="container mt-5">
 
     <form action="" method="POST" enctype="multipart/form-data">
-    <!--à utiliser multipart/form-data lorsque votre formulaire comprend des <input type="file">éléments -->
+        <!--à utiliser multipart/form-data lorsque votre formulaire comprend des <input type="file">éléments -->
         <div class="form-group row">
             <label for="nom_produit" class="col-md-3 col-form-label font-weight-bold">Nom du produit:</label>
             <div class="col-md-9">
@@ -22,7 +22,7 @@
         <div class="form-group row">
             <label for="image" class="col-md-3 col-form-label font-weight-bold">Image du produit</label>
             <div class="col-md-9">
-                <input type="file" class="form-control" name="image_upload" >
+                <input type="file" class="form-control" name="image_upload">
             </div>
         </div>
 
@@ -60,6 +60,17 @@
                 enchère (en secondes):</label>
             <div class="col-md-9">
                 <input type="number" class="form-control" name="augmentation_duree_produit" placeholder="Minimum 30 sec" required min="30" value="30">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="active-card" class="col-md-3 col-form-label font-weight-bold">choix activation de la carte (défaut activer)</label>
+            <div class="col-md-9">
+                <select class="custom-select" id="active-card" name="active-card" required>
+                    <option value="active">Activer</option>
+                    <option value="desactive">Désactiver</option>
+                    
+                </select>
             </div>
         </div>
 

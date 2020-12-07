@@ -17,7 +17,7 @@
 
 <body>
 
-    <?php include("../includes/nav-home.php"); ?>
+    <?php include("../includes/nav-ajout.php"); ?>
 
     <?php include("../includes/form.php"); ?>
 
