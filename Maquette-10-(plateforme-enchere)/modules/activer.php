@@ -1,4 +1,3 @@
-//module pour activer les cards dans la section card désactiver
 <?php
 if (isset($_POST['activer'])) {
     //atribution de id de la card à une variable
