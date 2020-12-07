@@ -1,6 +1,15 @@
 <?php
 session_start();
+
+if (!(isset($_SESSION['nomBouton']))) {
+
+$_SESSION['nomBouton'] = 'login';
+$_SESSION['pageLogin'] = 'pages/page-login.html';
+}
+
+
 ?>
+
 <!doctype html>
 <html lang="fr">
 

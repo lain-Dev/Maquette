@@ -1,8 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="../index.php">Toto &#9400;orp</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+
+    <a class="navbar-brand" href="index.php">Toto &#9400;orp</a>
+
+    <button type="button" class="btn btn-info border-0 btn-login"><a href="<?php echo $_SESSION['pageLogin'] ?>" class="text-white"><?php echo $_SESSION['nomBouton'] ?></a></button>
+
+    
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <!--
@@ -14,9 +16,10 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Administration enchère
                 </a>
+
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="pages/page-ajout.php"">Ajouter un produit</a>
-                    <a class="dropdown-item" href="pages/page-produitOff.php">Voir produits désactiver</a>
+                    <a class=" dropdown-item" href="pages/page-produitOff.php">Voir produits désactiver</a>
                 </div>
             </li>
         </ul>
