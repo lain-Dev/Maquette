@@ -28,7 +28,7 @@ foreach ($data as $valeur) {
 
             descrition: <?php echo $valeur['description_produit'] ?>
 
-            <form method="POST" action="../index.php">
+          <form method="POST" action="../index.php">
 
               <div class="form-group row">
                 <label for="prix_initial" class="col-md-3 col-form-label font-weight-bold"><h6>init:</h6></label>
@@ -74,17 +74,17 @@ foreach ($data as $valeur) {
           </p>
 
           <div class="form-group row" hidden>
-          <input type="text" class="form-control" name="active-card"  value="active">
-            </div>
+            <input type="text" class="form-control" name="active-card"  value="active">
+          </div>
         </div>
           
 
           <div class="justify-content-end d-flex row">
             <input name="id" value="<?= $valeur['id'] ?>" hidden type="submit">
-            <button id="id" class="btn btn-danger btn-listenchere mr-3 p-2 border-0" name="activer">
+            <button id="id" class="btn btn-danger btn-listenchere border-0" name="activer">
               Activer</button>
           </div>
-          </form>
+      </form>
 
         </div>
       </div>

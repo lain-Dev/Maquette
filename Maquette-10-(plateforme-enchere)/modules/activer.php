@@ -15,7 +15,7 @@ if (isset($_POST['activer'])) {
         if ($valeur['id'] == $id) {
 
             //attribution nouvelle valeur a élément active
-            $data[$key]['active-card'] = $_POST['active-card']['active'];
+            $data[$key]['active-card'] = $_POST['active-card']["active"];
             //encodage fichier en json
             file_put_contents($filename, json_encode($data));
         }
