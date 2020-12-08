@@ -1,3 +1,50 @@
 [
-    
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": "1",
+        "prix_clic_produit": "1.01",
+        "time-y": "2020",
+        "time-m": "12",
+        "time-d": "8",
+        "time-h": "19",
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "active-card": "active",
+        "submit": "Ajouter le produit",
+        "id": "7c8b30586e27d3d9324b2dad57ca00bd",
+        "image": "img\/admin.jpg"
+    },
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": "1",
+        "prix_clic_produit": "1.01",
+        "time-y": "2020",
+        "time-m": "12",
+        "time-d": "8",
+        "time-h": "22",
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "active-card": "active",
+        "submit": "Ajouter le produit",
+        "id": "661e711b387f15781bc0b3078e3f557a",
+        "image": "img\/tele.jpg"
+    },
+    {
+        "nom_produit": "iphone test",
+        "description_produit": "description lol",
+        "prix_initial_produit": "1",
+        "prix_clic_produit": "1.01",
+        "time-y": "2020",
+        "time-m": "12",
+        "time-d": "8",
+        "time-h": "19",
+        "augmentation_prix_produit": "1.01",
+        "augmentation_duree_produit": "30",
+        "active-card": "active",
+        "submit": "Ajouter le produit",
+        "id": "63709ead2024fedf35bfc165e9f6200e",
+        "image": "img\/ps5.jpg"
+    }
 ]

@@ -2,6 +2,7 @@
 //recherche des cards actives pour index.php
 //importation module enchère
 include("enchere.php");
+
 //importation module timer
 //include("timer.php");
 //variable dont destination fichier json
@@ -10,18 +11,36 @@ $datajson = file_get_contents("json/data.json");
 $data = json_decode($datajson, true);
 
 
+$year = $valeur['time-y'];
+	$month = $valeur['time-m'];
+	$day = $valeur['time-d'];
+	$hour = $valeur['time-h'];
+	$min = 00;
+	$sec = 00;
+
+	$target = mktime($hour, $min, $sec, $month, $day, $year);
+	$current = time();
+	$difference = $target - $current;
+
+	$rDay = floor($difference/60/60/24);
+	$rHour = floor(($difference-($rDay*60*60*24))/60/60);
+	$rMin = floor(($difference-($rDay*60*60*24)-$rHour*60*60)/60);
+	$rSec = floor(($difference-($rDay*60*60*24)-($rHour*60*60))-($rMin*60));
+
+
 //recherche dans les tableaux
 foreach ($data as $key =>$valeur) {
   
   //condition recherche valeur active dans les tableaux
   if ($data[$key]['active-card'] == 'active') {
-
+   
 ?>
   <!--intégration html par php-->
   <div class="col mb-4">
     <div class="card border border-success">
 
     <?php include("desactiver.php"); ?>
+    <?php include("timer.php"); ?>
       <div class="card-header">
       <form method="POST" action="">
       <div class="form-group row ml-1" hidden>
@@ -52,7 +71,7 @@ foreach ($data as $key =>$valeur) {
         <p class="card-text">
           descrition: <?php echo $valeur['description_produit'] ?></p>
         <p>prix: <?php echo $valeur['prix_initial_produit'] ?></p>
-        <p>temps l'enchère :</p> <p id="temps_<?= $values['id'] ?>"></p>
+        <p>temps l'enchère :</p> <h6 id="countdown"></h6>
 
         <form method="POST" >
           <div class="justify-content-end d-flex row">
@@ -69,7 +88,9 @@ foreach ($data as $key =>$valeur) {
 
 
 <?php
+
   }
+  
 }
 
 ?>

@@ -41,9 +41,30 @@
         </div>
 
         <div class="form-group row">
-            <label for="prix_clic" class="col-md-3 col-form-label font-weight-bold">temps enchère (heures): </label>
+            <label for="prix_clic" class="col-md-3 col-form-label font-weight-bold">temps enchère (Année): </label>
             <div class="col-md-9">
-            <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input" name="datetime">
+            <input type="number" class="form-control" name="time-y" placeholder="Exemple : 2020" min="2020" value="2020" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="prix_clic" class="col-md-3 col-form-label font-weight-bold">temps enchère (mois): </label>
+            <div class="col-md-9">
+            <input type="number" class="form-control" name="time-m" placeholder="Exemple :12"  min="01"  value="12" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="prix_clic" class="col-md-3 col-form-label font-weight-bold">temps enchère (day): </label>
+            <div class="col-md-9">
+            <input type="number" class="form-control" name="time-d" placeholder="Exemple : 18 €"  min="0" value="8" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="prix_clic" class="col-md-3 col-form-label font-weight-bold">temps enchère (h): </label>
+            <div class="col-md-9">
+            <input type="number" class="form-control" name="time-h" placeholder="Exemple : 1" required min="0" value="19" required>
             </div>
         </div>
 

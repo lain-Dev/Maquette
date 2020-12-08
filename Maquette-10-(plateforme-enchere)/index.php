@@ -29,7 +29,7 @@ $_SESSION['pageLogin'] = 'pages/page-login.html';
     <title>apply site enchere</title>
 </head>
 
-<body>
+<body onload="countdown()">
 
     <!--NavBar-->
     <?php include("includes/nav.php"); ?>
