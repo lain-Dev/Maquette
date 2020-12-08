@@ -1,4 +1,5 @@
 <?php
+//pour vérifier que le ficheir sois bien une image en fonction extension du fichier
 $fileName = $_FILES['image_upload']['name']; //On met dans une variable le nom de l'image pour vérifier si l'utilisateur a ajouté une
 
 if ($fileName == "") { // vérifie si la variable n'est pas vide

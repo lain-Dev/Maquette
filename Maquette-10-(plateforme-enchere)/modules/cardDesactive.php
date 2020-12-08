@@ -1,14 +1,18 @@
 <?php
-
+//recherche des cards désactiver pour afficher dans section section 
+//importation module pour activer card
 include("activer.php");
+//attribution destination fichier dans variable
 $datajson = file_get_contents("../json/data.json");
+//decode fichier json en php
 $data = json_decode($datajson, true);
 
 
-
+//recherche dans tableau
 foreach ($data as $valeur) {
+  //afficher les cards valeurs deactivées
   if ($valeur['active-card'] == 'desactive') {
-
+//importation html par php
 ?>
 
     <div class="col mb-4">
@@ -24,7 +28,7 @@ foreach ($data as $valeur) {
 
             descrition: <?php echo $valeur['description_produit'] ?>
 
-            <form method="POST" action="../index.php">
+          <form method="POST" action="../index.php">
 
               <div class="form-group row">
                 <label for="prix_initial" class="col-md-3 col-form-label font-weight-bold"><h6>init:</h6></label>
@@ -70,8 +74,8 @@ foreach ($data as $valeur) {
           </p>
 
           <div class="form-group row" hidden>
-          <input type="text" class="form-control" name="active-card"  value="active">
-            </div>
+            <input type="text" class="form-control" name="active-card"  value="active">
+          </div>
         </div>
 
         <div class="form-group row">
