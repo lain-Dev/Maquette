@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['activer'])) {
+if (isset($_POST['submit'])) {
     $id = $_POST['id'];
     $filename = '../json/data.json';
     $datajson = file_get_contents("json/data.json");

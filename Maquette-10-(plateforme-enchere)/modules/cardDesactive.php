@@ -73,14 +73,22 @@ foreach ($data as $valeur) {
           <input type="text" class="form-control" name="active-card"  value="active">
             </div>
         </div>
-          
 
-          <div class="justify-content-end d-flex row">
-            <input name="id" value="<?= $valeur['id'] ?>" hidden type="submit">
-            <button id="id" class="btn btn-danger btn-listenchere mr-3 p-2 border-0" name="activer">
-              Activer</button>
+        <div class="form-group row">
+            <label for="active-card" class="col-md-3 col-form-label font-weight-bold"><h6>Etat</h6></label>
+            <div class="col-md-9">
+                <select class="custom-select" id="active-card" name="active-card" required>
+                    <option value="active">Activer</option>
+                </select>
+            </div>
+        </div>
+          
+        <div class="justify-content-end d-flex row">
+            <input name="id" value="<?= $valeur['id'] ?>" hidden>
+            <button id="" class="btn btn-secondary btn-listenchere mr-3 p-2 border-0" name="encherir">
+              Encherir</button>
           </div>
-          </form>
+         
 
         </div>
       </div>
