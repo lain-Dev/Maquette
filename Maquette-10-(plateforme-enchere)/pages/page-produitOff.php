@@ -26,7 +26,7 @@ session_start();
     <article class="container">
 
         <div class="my-5 row row-cols-1 row-cols-md-3">
-            <!--Afficher enchere-->
+            <!--Afficher card desactiver-->
             <?php
             //variable destination fichier
             $datajson = file_get_contents("../json/data.json");

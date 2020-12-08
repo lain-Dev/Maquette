@@ -19,14 +19,29 @@ foreach ($data as $valeur) {
   <div class="col mb-4">
     <div class="card border border-success">
 
+    <?php include("desactiver.php"); ?>
       <div class="card-header">
+      <form method="POST" action="">
+      <div class="form-group row ml-1" hidden>
+            <label for="active-card" class="col-md-3 col-form-label font-weight-bold"><h6>Etat</h6></label>
+            <div class="col-md-9">
+                <select class="custom-select" id="active-card" name="active-card" required style="width: 218px;">
+                    <option value="desactive">desactiver</option>
+                </select>
+            </div>
+        </div>
+
         <ul class="nav nav-pills card-header-pills">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Desactiver</a>
+          <div class="justify-content-end d-flex row ml-5">
+            <input name="id" value="<?= $valeur['id'] ?>" hidden>
+            <button id="" class="btn btn-secondary btn-listenchere mr-3 p-2 border-0" name="desactiver">
+              desactive</button>
+          </div>
           </li>
         </ul>
       </div>
-      
+      </form>
       <img src="<?= $valeur['image'] ?>" class="card-img-top border-bottom" alt="..." style="width: 100%; height: 15vw; object-fit: cover;">
 
       <div class="card-body">
