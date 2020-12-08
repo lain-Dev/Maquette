@@ -9,10 +9,12 @@ $datajson = file_get_contents("json/data.json");
 //décodage du ficher en php
 $data = json_decode($datajson, true);
 
+
 //recherche dans les tableaux
-foreach ($data as $valeur) {
+foreach ($data as $key =>$valeur) {
+  
   //condition recherche valeur active dans les tableaux
-  if ($valeur['active-card'] == 'active') {
+  if ($data[$key]['active-card'] == 'active') {
 
 ?>
   <!--intégration html par php-->
@@ -48,16 +50,14 @@ foreach ($data as $valeur) {
 
         <h5 class="card-title"><?php echo $valeur['nom_produit'] ?></h5>
         <p class="card-text">
-          descrition: <?php echo $valeur['description_produit'] ?>
-          <br>
-          prix: <?php echo $valeur['prix_initial_produit'] ?> <br>
-          temps l'enchère : <?= $valeur['temps_enchere'] ?>
-        </p>
+          descrition: <?php echo $valeur['description_produit'] ?></p>
+        <p>prix: <?php echo $valeur['prix_initial_produit'] ?></p>
+        <p>temps l'enchère :</p> <p id="temps_<?= $values['id'] ?>"></p>
 
-        <form method="POST">
+        <form method="POST" >
           <div class="justify-content-end d-flex row">
             <input name="id" value="<?= $valeur['id'] ?>" hidden>
-            <button id="" class="btn btn-secondary btn-listenchere mr-3 p-2 border-0" name="encherir">
+            <button id="btn_<?= $values['id'] ?> class="btn btn-secondary btn-listenchere mr-3 p-2 border-0" name="encherir">
               Encherir</button>
           </div>
         </form>
@@ -65,6 +65,7 @@ foreach ($data as $valeur) {
       </div>
     </div>
   </div>
+  
 
 
 <?php

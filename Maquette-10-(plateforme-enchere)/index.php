@@ -41,18 +41,9 @@ $_SESSION['pageLogin'] = 'pages/page-login.html';
         <div class="my-5 row row-cols-1 row-cols-md-3">
             <!--Afficher enchere-->
             <?php
-
+            include("modules/card.php");
             $datajson = file_get_contents("json/data.json");
             $data = json_decode($datajson, true);
-            //si il y a aucune card on affiche un message a index
-            if ($data == null) { // si l'état est false donc inactif     
-                echo '<div class="col-12 d-flex justify-content-center mt-5">
-                <div class="alert alert-warning">PAS DE PRODUIT ACTUELLEMENT !</div>
-                </div>'; // afficher le message aucun article à afficher
-            }
-
-            include("modules/card.php");
-
             ?>
         </div>
 

@@ -108,7 +108,6 @@ foreach ($data as $valeur) {
       </div>
     </div>
 
-
 <?php
   }
 }

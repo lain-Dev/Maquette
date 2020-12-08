@@ -43,7 +43,7 @@
         <div class="form-group row">
             <label for="prix_clic" class="col-md-3 col-form-label font-weight-bold">temps enchère (heures): </label>
             <div class="col-md-9">
-                <input type="number" class="form-control" name="temps_enchere" placeholder="1 heure" required min="1" value="1">
+            <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input" name="datetime">
             </div>
         </div>
 
